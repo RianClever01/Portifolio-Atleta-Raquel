@@ -5,7 +5,7 @@ type MeuBotaoprops = ButtonProps & {
     children: React.ReactNode;
 };
 
-const MeuBotão = ({children, ...props}: MeuBotaoprops) => {
+const MeuBotao = ({children, ...props}: MeuBotaoprops) => {
 
     return(
         <Button 
@@ -25,4 +25,4 @@ const MeuBotão = ({children, ...props}: MeuBotaoprops) => {
     );
 };
 
-export default MeuBotão
+export default MeuBotao

@@ -1,8 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
+import TimelineIcon from '@mui/icons-material/Timeline';
 import sulamerican from "../../../../assets/images/sulamerican.jpg";
 import Section from "../../../../Components/Section/Section";
 import AnimBox from "../../../../Components/AnimBox/AnimBox";
+import MeuBotao from "../../../../Components/Button/Button";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const About = () => {
   return (
@@ -46,7 +49,7 @@ const About = () => {
               }}
             />
           </AnimBox>
-        </Grid>  
+        </Grid>
         <Grid size={{ xs: 12, md: 7 }}>
           <Box
             id="about-content"
@@ -101,6 +104,46 @@ const About = () => {
                 minha vida.
               </Typography>
             </AnimBox>
+            
+              <MeuBotao
+                href="#journey"
+                variant="outlined"
+                startIcon={<TimelineIcon />}
+                sx={{
+                  position: 'absolute',
+                  textAlign: 'center',
+                  fontSize: {
+                    xs: "0.5rem",
+                    md: "0.8rem",
+                  },
+                  top: 15,
+                  transform: "translateX(440px)",
+                  maxWidth: '95%'
+                }}
+              >
+
+                Minha trajetória
+              </MeuBotao>
+              <MeuBotao
+                href="#home"
+                variant="outlined"
+                startIcon={<ArrowBackIcon />}
+                sx={{
+                  position: 'absolute',
+                  textAlign: 'center',
+                  fontSize: {
+                    xs: "0.5rem",
+                    md: "0.8rem",
+                  },
+                  top: 15,
+                  transform: "translateX(-550px)",
+                  maxWidth: '95%'
+                }}
+              >
+
+                Voltar
+              </MeuBotao>
+            
           </Box>
         </Grid>
       </Grid>

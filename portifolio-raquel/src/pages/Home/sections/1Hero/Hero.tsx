@@ -1,11 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography} from "@mui/material";
 import Grid from "@mui/material/Grid"
 import quelCostas from "../../../../assets/images/quelCostas.jpg";
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import Face4Icon from '@mui/icons-material/Face4';
-import MeuBotão from "../../../../Components/Button/Button";
+
 import Section from "../../../../Components/Section/Section";
 import TimelineIcon from '@mui/icons-material/Timeline';
+import MeuBotao from "../../../../Components/Button/Button";
 
 
 
@@ -89,9 +90,9 @@ const Hero = () => {
                                     lg: "translateY(60px)"
                                 }
                             }}>
-                                <MeuBotão href="#about-content" variant="outlined" startIcon={<Face4Icon />}> Sobre mim </MeuBotão>
-                                <MeuBotão href="#journey" variant="outlined" startIcon={<TimelineIcon />}> Minha trajetória </MeuBotão>
-                                <MeuBotão href="#contact" variant="outlined" startIcon={<ContactPageIcon />}> Contact Me </MeuBotão>
+                                <MeuBotao href="#about" variant="outlined" startIcon={<Face4Icon />}> Sobre mim  </MeuBotao>
+                                <MeuBotao href="#journey" variant="outlined" startIcon={<TimelineIcon />}> Minha trajetória </MeuBotao>
+                                <MeuBotao href="#contact" variant="outlined" startIcon={<ContactPageIcon />}> Contact Me </MeuBotao>
                             </Box>
                         </Box>
                         <Typography variant="body1"
